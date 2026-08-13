@@ -56,11 +56,13 @@ const Authors = (props) => {
 
       {props.token && (
         <>
-          <h2>set birthyear</h2>
+          <h2>Set birthyear</h2>
           <form onSubmit={submit}>
             <div>
-              name
+              <label htmlFor="name">name</label>{' '}
               <select
+                id="name"
+                name="name"
                 value={name}
                 onChange={({ target }) => setName(target.value)}
               >
@@ -73,8 +75,9 @@ const Authors = (props) => {
               </select>
             </div>
             <div>
-              born
+              <label htmlFor="born">born</label>{' '}
               <input
+                id="born"
                 type="number"
                 value={born}
                 onChange={({ target }) => setBorn(target.value)}

@@ -58,6 +58,7 @@ const App = () => {
         show={page === 'login'}
         setToken={setToken}
         setError={notify}
+        setPage={setPage}
       />
     </div>
   )
